@@ -75,7 +75,7 @@ cd ${WORKDIR}
 mkdir -p D3588-kernel-6.6.y
 cd D3588-kernel-6.6.y
 
-wget -c https://github.com/yifengyou/Liontron-D3588/releases/download/D3588-kernel-6.6.y/uboot.img
+wget -c https://github.com/lixiaoyuan/Liontron-D3588/releases/download/D3588-kernel-6.6.y/uboot.img
 ls -alh uboot.img
 mv uboot.img ${WORKDIR}/rockdev/uboot.img
 ls -alh ${WORKDIR}/rockdev/uboot.img
@@ -89,23 +89,23 @@ cd ${WORKDIR}
 mkdir -p D3588-kernel-6.6.y
 cd D3588-kernel-6.6.y
 
-wget -c https://github.com/yifengyou/Liontron-D3588/releases/download/D3588-kernel-6.6.y/Image
+wget -c https://github.com/lixiaoyuan/Liontron-D3588/releases/download/D3588-kernel-6.6.y/Image
 ls -alh Image
 md5sum Image
 
-wget -c https://github.com/yifengyou/Liontron-D3588/releases/download/D3588-kernel-6.6.y/config-6.6.y-kdev
+wget -c https://github.com/lixiaoyuan/Liontron-D3588/releases/download/D3588-kernel-6.6.y/config-6.6.y-kdev
 ls -alh config-6.6.y-kdev
 md5sum config-6.6.y-kdev
 
-wget -c https://github.com/yifengyou/Liontron-D3588/releases/download/D3588-kernel-6.6.y/System.map-6.6.y-kdev
+wget -c https://github.com/lixiaoyuan/Liontron-D3588/releases/download/D3588-kernel-6.6.y/System.map-6.6.y-kdev
 ls -alh System.map-6.6.y-kdev
 md5sum System.map-6.6.y-kdev
 
-wget -c https://github.com/yifengyou/Liontron-D3588/releases/download/D3588-kernel-6.6.y/rk3588-liontron-d3588.dtb
+wget -c https://github.com/lixiaoyuan/Liontron-D3588/releases/download/D3588-kernel-6.6.y/rk3588-liontron-d3588.dtb
 ls -alh rk3588-liontron-d3588.dtb
 md5sum rk3588-liontron-d3588.dtb
 
-wget -c https://github.com/yifengyou/Liontron-D3588/releases/download/D3588-kernel-6.6.y/kos.tar.gz
+wget -c https://github.com/lixiaoyuan/Liontron-D3588/releases/download/D3588-kernel-6.6.y/kos.tar.gz
 ls -alh kos.tar.gz
 md5sum kos.tar.gz
 tar -xf kos.tar.gz
