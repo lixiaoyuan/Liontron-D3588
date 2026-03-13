@@ -16,7 +16,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        include:          
+        include: 
+          - set_vendor: armbian
+            set_rootfs: armbian_bookworm_gnome_aarch64.rar
           - set_vendor: debian
             set_rootfs: debian_bookworm_12_arm64.rar
           - set_vendor: debian
