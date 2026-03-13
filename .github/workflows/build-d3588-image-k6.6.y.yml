@@ -21,16 +21,6 @@ jobs:
             set_rootfs: debian_bookworm_12_arm64.rar
           - set_vendor: debian
             set_rootfs: debian_bullseye_11_arm64.rar
-          - set_vendor: debian
-            set_rootfs: debian_trixie_13_arm64.rar
-          - set_vendor: armbian
-            set_rootfs: armbian_bookworm_gnome_aarch64.rar
-          - set_vendor: armbian
-            set_rootfs: armbian_bookworm_mini_aarch64.rar
-          - set_vendor: armbian
-            set_rootfs: armbian_bookworm_xfce_aarch64.rar
-          - set_vendor: armbian
-            set_rootfs: armbian_bullseye_mini_aarch64.rar
     steps:
       - name: Checkout
         uses: actions/checkout@v4
