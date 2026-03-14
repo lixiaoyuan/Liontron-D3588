@@ -78,7 +78,11 @@ if ls "${WORKDIR}/kernel-6.6.y/"*.patch >/dev/null 2>&1; then
 fi
 
 if [ -f ./arch/arm64/boot/dts/rockchip/rk3588-liontron-d3588.dts ]; then
-  echo '存在'
+  echo '存在1'
+  md5sum ./arch/arm64/boot/dts/rockchip/rk3588-liontron-d3588.dts
+  cp -f ${WORKDIR}/kernel-5.10.226/rk3588-liontron-d3588.dts ./arch/arm64/boot/dts/rockchip/rk3588-liontron-d3588.dts
+  md5sum ./arch/arm64/boot/dts/rockchip/rk3588-liontron-d3588.dts
+  echo '存在2'
 fi
 
 if [ -d ${WORKDIR}/kernel-6.6.y ]; then
