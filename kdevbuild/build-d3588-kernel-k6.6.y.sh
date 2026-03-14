@@ -77,6 +77,10 @@ if ls "${WORKDIR}/kernel-6.6.y/"*.patch >/dev/null 2>&1; then
   git am ${WORKDIR}/kernel-6.6.y/*.patch
 fi
 
+if [ -f ./arch/arm64/boot/dts/rockchip/rk3588-liontron-d3588.dts ]; then
+  echo '存在'
+fi
+
 if [ -d ${WORKDIR}/kernel-6.6.y ]; then
   ls -alh ${WORKDIR}/kernel-6.6.y/
   cp -a ${WORKDIR}/kernel-6.6.y/* .
